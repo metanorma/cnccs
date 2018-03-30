@@ -79,7 +79,7 @@ module Cnccs
     # @param match [String]
     # @return [Array<String, Array>]
     def fetch_data(level, match)
-      csv = CSV.read "cn-ccs-codes/cat-level#{level}.csv", headers: true
+      csv = CSV.read "#{__dir__}/../../cn-ccs-codes/cat-level#{level}.csv", headers: true
       row = csv.find { |r| r[0] == match }
       row.map(&:last)
     end
