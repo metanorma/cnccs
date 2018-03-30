@@ -33,33 +33,33 @@ Fetching CCS data:
 [source,ruby]
 ----
 # Fetch field
-ccs = CnCcs.fetch fieldcode: "J"
+ccs = Cnccs.fetch fieldcode: "J"
 ccs.code        # => "J"
 ccs.fieldcode   # => "J"
 ccs.description "机械"
 ccs.notes # => ""
 
 # Fetch group
-ccs = CnCcs.fetch fieldcode: "J", groupcode: "90/99"
+ccs = Cnccs.fetch fieldcode: "J", groupcode: "90/99"
 ccs.code             # => "J90/99"
 ccs.groupcode        # => "90/99"
 ccs.description      # => "活塞式内燃机与其他动力设备"
 ccs.description_full # => "机械；活塞式内燃机与其他动力设备"
 ccs.fieldcode        # => "J"
 ccs.notes            # => [
-  #<CnCcs::Note:XXX @text="汽车专用发动机入{ccs-code}", @ccs_code="T10/19">,
-  #<CnCcs::Note:XXX @text="船舶专用发动机入{ccs-code}", @ccs_code="U40/44">,
-  #<CnCcs::Note:XXX @text="航天专用发动机入{ccs-code}", @ccs_code="V30/34">,
-  #<CnCcs::Note:XXX @text="铁路机车专用发动机入{ccs-code}", @ccs_code="V72">,
-  #<CnCcs::Note:XXX @text="动车专用发动机入{ccs-code}", @ccs_code="S40/49">,
-  #<CnCcs::Note:XXX @text="发电用动力设备入{ccs-code}", @ccs_code="K50/59">,
+  #<Cnccs::Note:XXX @text="汽车专用发动机入{ccs-code}", @ccs_code="T10/19">,
+  #<Cnccs::Note:XXX @text="船舶专用发动机入{ccs-code}", @ccs_code="U40/44">,
+  #<Cnccs::Note:XXX @text="航天专用发动机入{ccs-code}", @ccs_code="V30/34">,
+  #<Cnccs::Note:XXX @text="铁路机车专用发动机入{ccs-code}", @ccs_code="V72">,
+  #<Cnccs::Note:XXX @text="动车专用发动机入{ccs-code}", @ccs_code="S40/49">,
+  #<Cnccs::Note:XXX @text="发电用动力设备入{ccs-code}", @ccs_code="K50/59">,
 ]
 
 J98,,J90/99,
 
 
 # Fetch subgroup
-ccs = CnCcs.fetch subgroupcode: "J98"
+ccs = Cnccs.fetch subgroupcode: "J98"
 ccs.code             # => "J98"
 ccs.fieldcode        # => "J"
 ccs.groupcode        # => "90/99"
@@ -67,9 +67,9 @@ ccs.subgroupcode     # => "98"
 ccs.description      # => "锅炉及其辅助设备"
 ccs.description_full # => "机械；活塞式内燃机与其他动力设备：锅炉及其辅助设备"
 ccs.notes            # => [
-  #<CnCcs::Note:XXX @text="电站锅炉，工业锅炉、余热锅炉、热水锅炉等及其辅助设备。", @ccs_code=nil>,
-  #<CnCcs::Note:XXX @text="锅炉高能点火器入 {ccs-code}", @ccs_code="T37">,
-  #<CnCcs::Note:XXX @text="煤的粉碎、推进机械，锅炉用水处理设备、罐内水处理剂配方等入此。", @ccs_code=nil>,
+  #<Cnccs::Note:XXX @text="电站锅炉，工业锅炉、余热锅炉、热水锅炉等及其辅助设备。", @ccs_code=nil>,
+  #<Cnccs::Note:XXX @text="锅炉高能点火器入 {ccs-code}", @ccs_code="T37">,
+  #<Cnccs::Note:XXX @text="煤的粉碎、推进机械，锅炉用水处理设备、罐内水处理剂配方等入此。", @ccs_code=nil>,
 ]
 
 note = ccs.notes[1]
@@ -78,7 +78,7 @@ note.ccs_code        # => "T37"
 note.ccs.description # => "点火装置"
 
 # Fetch by code
-ccs = CnCcs.fetch "J98"
+ccs = Cnccs.fetch "J98"
 ccs.description_full # => "机械；活塞式内燃机与其他动力设备：锅炉及其辅助设备"
 ----
 
