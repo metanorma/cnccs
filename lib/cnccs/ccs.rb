@@ -88,6 +88,7 @@ module Cnccs
     # @param nts [String]
     # @return [Array<Cnccs::Note>]
     def fetch_notes(nts)
+      return if nil?
       splitter = [227, 128, 130].pack('c*').force_encoding("UTF-8")
       rgxp = /[A-Z]\d{2}(\/\d{2})?$/
       nts.split(splitter).map do |n|
