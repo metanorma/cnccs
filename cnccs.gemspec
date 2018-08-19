@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Classification of Chinese Standards ("CCS") are accessible via this gem.}
   spec.description   = %q{Classification of Chinese Standards ("CCS") are accessible via this gem.}
   spec.homepage      = "https://github.com/riboseinc/cnccs"
-  spec.license       = "MIT"
+  spec.license       = "BSD-2-Clause"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
