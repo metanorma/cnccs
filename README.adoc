@@ -1,8 +1,10 @@
 = CnCcs: Ruby gem for using CCS codes
 
 image:https://img.shields.io/gem/v/cnccs.svg["Gem Version", link="https://rubygems.org/gems/cnccs"]
-image:https://img.shields.io/travis/riboseinc/cnccs/master.svg["Build Status", link="https://travis-ci.org/riboseinc/cnccs"]
-image:https://codeclimate.com/github/riboseinc/cnccs/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/riboseinc/cnccs"]
+image:https://github.com/metanorma/cnccs/workflows/ubuntu/badge.svg["Ubuntu Build Status", link="https://github.com/metanorma/cnccs/actions?query=workflow%3Aubuntu"]
+image:https://github.com/metanorma/cnccs/workflows/macos/badge.svg["OSX Build Status", link="https://github.com/metanorma/cnccs/actions?query=workflow%3Amacos"]
+image:https://github.com/metanorma/cnccs/workflows/windows/badge.svg["Windows Build Status", link="https://github.com/metanorma/cnccs/actions?query=workflow%3Awindows"]
+image:https://codeclimate.com/github/metanorma/cnccs/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/cnccs"]
 
 The categories used in the Classification of Chinese Standards ("CCS")
 are accessible via this gem.
