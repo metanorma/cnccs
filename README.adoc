@@ -1,8 +1,9 @@
 = CnCcs: Ruby gem for using CCS codes
 
 image:https://img.shields.io/gem/v/cnccs.svg["Gem Version", link="https://rubygems.org/gems/cnccs"]
-image:https://travis-ci.com/metanorma/cnccs.svg["Build Status", link="https://travis-ci.com/metanorma/cnccs"]
-image:https://ci.appveyor.com/api/projects/status/es8e9ts8aw8236bj?svg=true["Appveyor Build Status", link="https://ci.appveyor.com/project/metanorma/cnccs"]
+image:https://github.com/metanorma/cnccs/workflows/ubuntu/badge.svg["Ubuntu Build Status", link="https://github.com/metanorma/cnccs/actions?query=workflow%3Aubuntu"]
+image:https://github.com/metanorma/cnccs/workflows/macos/badge.svg["OSX Build Status", link="https://github.com/metanorma/cnccs/actions?query=workflow%3Amacos"]
+image:https://github.com/metanorma/cnccs/workflows/windows/badge.svg["Windows Build Status", link="https://github.com/metanorma/cnccs/actions?query=workflow%3Awindows"]
 image:https://codeclimate.com/github/metanorma/cnccs/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/cnccs"]
 image:https://img.shields.io/github/issues-pr-raw/metanorma/cnccs.svg["Pull Requests", link="https://github.com/metanorma/cnccs/pulls"]
 image:https://img.shields.io/github/commits-since/metanorma/cnccs/latest.svg["Commits since latest",link="https://github.com/metanorma/cnccs/releases"]
