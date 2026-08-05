@@ -1,5 +1,10 @@
 = CnCcs: Ruby gem for using CCS codes
 
+[IMPORTANT]
+====
+*This repository is dormant and unmaintained.* Last release v0.1.6 (2020-05-24). Its sole consumer, https://github.com/metanorma/metanorma-gb[metanorma-gb], is itself dormant. Removed from cimas.yml on 2026-08-02 (metanorma/ci@95b14b9). Not archived, so historical references stay resolvable, but no active maintenance, releases, or bug fixes are planned.
+====
+
 image:https://img.shields.io/gem/v/cnccs.svg["Gem Version", link="https://rubygems.org/gems/cnccs"]
 image:https://github.com/metanorma/cnccs/workflows/rake/badge.svg["Build Status", link="https://github.com/metanorma/cnccs/actions?workflow=rake"]
 image:https://codeclimate.com/github/metanorma/cnccs/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/metanorma/cnccs"]
